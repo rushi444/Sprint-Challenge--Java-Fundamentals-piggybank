@@ -31,4 +31,7 @@ public abstract class Money {
     public int getQuantity(){
         return quantity;
     }
+    public double getTotalValue(){
+        return value * quantity;
+    }
 }

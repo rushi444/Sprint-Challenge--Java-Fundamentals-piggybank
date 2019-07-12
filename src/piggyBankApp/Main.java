@@ -1,5 +1,5 @@
 package piggyBankApp;
-
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Main {
@@ -22,6 +22,15 @@ public class Main {
                 System.out.println("$" + m.getQuantity());
             }
         }
+        double piggyNetWorth = 0;
+       for(Money m : piggyBank) {
+           piggyNetWorth += m.getTotalValue();
+       }
+        DecimalFormat fp = new DecimalFormat("$###,###.00");
+       System.out.println("The piggy bank holds " + fp.format(piggyNetWorth));
+
+
+
 
 
     }
