@@ -13,8 +13,16 @@ public abstract class Money {
 
     public Money(int quantity) {
         this.quantity = quantity;
-        if (amount > 1) {
+        if (quantity > 1) {
             this.plural = "s";
         }
+    }
+
+    public void setValue(double value){
+        this.value = value;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
