@@ -1,7 +1,6 @@
 package piggyBankApp;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,8 +13,16 @@ public class Main {
         piggyBank.add(new Dollar());
         piggyBank.add(new Penny(10));
 
+        double lessThan = 0.99;
+
         for(Money m : piggyBank){
-            System.out.println(m.getQuantity() + " " + m.getType());
+            if(m.getValue() <= lessThan) {
+                System.out.println(m.getQuantity() + " " + m.getType());
+            } else {
+                System.out.println("$" + m.getQuantity());
+            }
         }
+
+
     }
 }
