@@ -1,3 +1,11 @@
+- [x] Initial Commit
+- [ ] Create Abstract Class for Money
+- [ ] Create Classes for each type of money
+- [ ] Create ArrayList in Main and add money
+- [ ] Create "piggyBank total" function in Main
+- [ ] Refactor Code
+
+
 # Introduction
 
 This sprint challenge combines the knowledge from this week's Java Fundamentals lessons in order to create a Magical Piggy Bank using Java and the JDK.
