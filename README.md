@@ -1,6 +1,6 @@
 - [x] Initial Commit
 - [x] Create Abstract Class for Money
-- [ ] Create Classes for each type of money
+- [x] Create Classes for each type of money
 - [ ] Create ArrayList in Main and add money
 - [ ] Create "piggyBank total" function in Main
 - [ ] Refactor Code
