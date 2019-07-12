@@ -10,7 +10,7 @@ public class Dollar extends Money {
     public Dollar(int quantity) {
         super(quantity);
         super.setValue(1.00);
-        super.setType("Dollar");
+        super.setType("Dollars");
     }
 
 }

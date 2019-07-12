@@ -9,6 +9,6 @@ public class Dime extends Money {
     public Dime(int quantity) {
         super(quantity);
         super.setValue(0.10);
-        super.setType("Dime");
+        super.setType("Dimes");
     }
 }

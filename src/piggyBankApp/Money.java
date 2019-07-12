@@ -13,9 +13,6 @@ public abstract class Money {
 
     public Money(int quantity) {
         this.quantity = quantity;
-        if (quantity > 1) {
-            this.plural = "s";
-        }
     }
 
     public void setValue(double value){
@@ -24,5 +21,14 @@ public abstract class Money {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+
+    public int getQuantity(){
+        return quantity;
     }
 }

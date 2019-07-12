@@ -9,6 +9,6 @@ public class Nickel extends Money{
     public Nickel(int quantity) {
         super(quantity);
         super.setValue(0.05);
-        super.setType("Nickel");
+        super.setType("Nickels");
     }
 }

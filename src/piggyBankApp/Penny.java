@@ -9,7 +9,7 @@ public class Penny extends Money {
     public Penny(int quantity) {
         super(quantity);
         super.setValue(0.01);
-        super.setType("Penny");
+        super.setType("Pennies");
     }
 
 }
