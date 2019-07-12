@@ -1,4 +1,5 @@
 package piggyBankApp;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
@@ -15,22 +16,19 @@ public class Main {
 
         double lessThan = 0.99;
 
-        for(Money m : piggyBank){
-            if(m.getValue() <= lessThan) {
+        for (Money m : piggyBank) {
+            if (m.getValue() <= lessThan) {
                 System.out.println(m.getQuantity() + " " + m.getType());
             } else {
                 System.out.println("$" + m.getQuantity());
             }
         }
         double piggyNetWorth = 0;
-       for(Money m : piggyBank) {
-           piggyNetWorth += m.getTotalValue();
-       }
+        for (Money m : piggyBank) {
+            piggyNetWorth += m.getTotalValue();
+        }
         DecimalFormat fp = new DecimalFormat("$###,###.00");
-       System.out.println("The piggy bank holds " + fp.format(piggyNetWorth));
-
-
-
+        System.out.println("The piggy bank holds " + fp.format(piggyNetWorth));
 
 
     }

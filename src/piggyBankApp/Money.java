@@ -13,7 +13,7 @@ public abstract class Money {
         this.quantity = quantity;
     }
 
-    public void setValue(double value){
+    public void setValue(double value) {
         this.value = value;
     }
 
@@ -27,11 +27,13 @@ public abstract class Money {
 
     public double getValue() {
         return value;
-}
-    public int getQuantity(){
+    }
+
+    public int getQuantity() {
         return quantity;
     }
-    public double getTotalValue(){
+
+    public double getTotalValue() {
         return value * quantity;
     }
 }
